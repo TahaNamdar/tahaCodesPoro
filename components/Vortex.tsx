@@ -1,12 +1,12 @@
 "use client"
 
 import { cn } from "@/lib/utils";
-import React, { useEffect, useRef } from "react";
+import React, { ReactNode, useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
 import { motion } from "framer-motion";
 
 interface VortexProps {
-  children?: any;
+  children?: ReactNode;
   className?: string;
   containerClassName?: string;
   particleCount?: number;
