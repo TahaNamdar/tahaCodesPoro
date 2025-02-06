@@ -11,6 +11,8 @@ import {
 import { FloatingDock } from "@/components/Dock";
 import ThemeToggle from "@/components/ThemeToggle";
 import { products } from "./constants";
+import Taha from '@/public/taha.png'
+import Image from "next/image";
 
 
   const links = [
@@ -90,18 +92,22 @@ const HomePage = () => {
         <HeroParallax products={products} />
       </div>
       <BackgroundBeamsWithCollision>
-        <h2 className="text-2xl relative z-20 md:text-2xl lg:text-4xl font-bold text-center text-black dark:text-white font-sans tracking-tight  mx-auto flex w-[80%] justify-center">
-          <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
-            <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
-              Provided By Taha <span className="text-zinc-600 font-medium">2025</span>.
+        <h2 className="text-2xl relative z-20 md:text-2xl lg:text-4xl font-bold text-center text-black dark:text-white font-sans tracking-tight  mx-auto flex w-[80%] justify-center ">
+          <div className="relative mx-auto inline-block  w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
+            <div className="absolute opacity-45 left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 from-purple-500 via-violet-500 to-pink-500 [text-shadow:0_0_rgba(0,0,0,0.1)]">
+              Provided By Taha{" "}
+              <span className="text-zinc-600 font-medium">2025</span>.
             </div>
             <div className="relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 py-4">
-              <span >
-                Provided By Taha <span className="text-zinc-600 font-medium">2025</span>.
+              <span className="opacity-50">
+                Provided By Taha{" "}
+                <span className="text-zinc-600 font-medium">2025</span>.
               </span>
             </div>
+
           </div>
         </h2>
+            <Image src={Taha} alt="taha" width={100} className="absolute bottom-0" />
       </BackgroundBeamsWithCollision>
 
       <div className="block lg:hidden fixed z-50 bottom-8 right-6">
